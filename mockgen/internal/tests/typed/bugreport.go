@@ -5,7 +5,7 @@ package typed
 import (
 	"log"
 
-	"github.com/golang/mock/mockgen/internal/tests/typed/faux"
+	"github.com/neutrinocorp/mock/mockgen/internal/tests/typed/faux"
 )
 
 // Source is an interface w/ an embedded foreign interface

@@ -1,3 +1,3 @@
 # Parenthesized Parameter Type
 
-Test for [Issue#416](https://github.com/golang/mock/issues/416).
+Test for [Issue#416](https://github.com/neutrinocorp/mock/issues/416).

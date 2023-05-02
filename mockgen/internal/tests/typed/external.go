@@ -1,7 +1,7 @@
 package typed
 
 import (
-	"github.com/golang/mock/mockgen/internal/tests/typed/other"
+	"github.com/neutrinocorp/mock/mockgen/internal/tests/typed/other"
 	"golang.org/x/exp/constraints"
 )
 

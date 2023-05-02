@@ -7,9 +7,9 @@ package source
 import (
 	reflect "reflect"
 
-	gomock "github.com/golang/mock/gomock"
-	typed "github.com/golang/mock/mockgen/internal/tests/typed"
-	other "github.com/golang/mock/mockgen/internal/tests/typed/other"
+	gomock "github.com/neutrinocorp/mock/gomock"
+	typed "github.com/neutrinocorp/mock/mockgen/internal/tests/typed"
+	other "github.com/neutrinocorp/mock/mockgen/internal/tests/typed/other"
 )
 
 // MockBar is a mock of Bar interface.
@@ -50,7 +50,7 @@ func (mr *MockBarMockRecorder[T, R]) Eight(arg0 interface{}) *BarEightCall[T, R]
 	return &BarEightCall[T, R]{Call: call}
 }
 
-//  BarEightCall wrap *gomock.Call
+// BarEightCall wrap *gomock.Call
 type BarEightCall[T any, R any] struct {
 	*gomock.Call
 }
@@ -89,7 +89,7 @@ func (mr *MockBarMockRecorder[T, R]) Eighteen() *BarEighteenCall[T, R] {
 	return &BarEighteenCall[T, R]{Call: call}
 }
 
-//  BarEighteenCall wrap *gomock.Call
+// BarEighteenCall wrap *gomock.Call
 type BarEighteenCall[T any, R any] struct {
 	*gomock.Call
 }
@@ -128,7 +128,7 @@ func (mr *MockBarMockRecorder[T, R]) Eleven() *BarElevenCall[T, R] {
 	return &BarElevenCall[T, R]{Call: call}
 }
 
-//  BarElevenCall wrap *gomock.Call
+// BarElevenCall wrap *gomock.Call
 type BarElevenCall[T any, R any] struct {
 	*gomock.Call
 }
@@ -167,7 +167,7 @@ func (mr *MockBarMockRecorder[T, R]) Fifteen() *BarFifteenCall[T, R] {
 	return &BarFifteenCall[T, R]{Call: call}
 }
 
-//  BarFifteenCall wrap *gomock.Call
+// BarFifteenCall wrap *gomock.Call
 type BarFifteenCall[T any, R any] struct {
 	*gomock.Call
 }
@@ -205,7 +205,7 @@ func (mr *MockBarMockRecorder[T, R]) Five(arg0 interface{}) *BarFiveCall[T, R] {
 	return &BarFiveCall[T, R]{Call: call}
 }
 
-//  BarFiveCall wrap *gomock.Call
+// BarFiveCall wrap *gomock.Call
 type BarFiveCall[T any, R any] struct {
 	*gomock.Call
 }
@@ -243,7 +243,7 @@ func (mr *MockBarMockRecorder[T, R]) Four(arg0 interface{}) *BarFourCall[T, R] {
 	return &BarFourCall[T, R]{Call: call}
 }
 
-//  BarFourCall wrap *gomock.Call
+// BarFourCall wrap *gomock.Call
 type BarFourCall[T any, R any] struct {
 	*gomock.Call
 }
@@ -282,7 +282,7 @@ func (mr *MockBarMockRecorder[T, R]) Fourteen() *BarFourteenCall[T, R] {
 	return &BarFourteenCall[T, R]{Call: call}
 }
 
-//  BarFourteenCall wrap *gomock.Call
+// BarFourteenCall wrap *gomock.Call
 type BarFourteenCall[T any, R any] struct {
 	*gomock.Call
 }
@@ -318,7 +318,7 @@ func (mr *MockBarMockRecorder[T, R]) Nine(arg0 interface{}) *BarNineCall[T, R] {
 	return &BarNineCall[T, R]{Call: call}
 }
 
-//  BarNineCall wrap *gomock.Call
+// BarNineCall wrap *gomock.Call
 type BarNineCall[T any, R any] struct {
 	*gomock.Call
 }
@@ -356,7 +356,7 @@ func (mr *MockBarMockRecorder[T, R]) Nineteen() *BarNineteenCall[T, R] {
 	return &BarNineteenCall[T, R]{Call: call}
 }
 
-//  BarNineteenCall wrap *gomock.Call
+// BarNineteenCall wrap *gomock.Call
 type BarNineteenCall[T any, R any] struct {
 	*gomock.Call
 }
@@ -394,7 +394,7 @@ func (mr *MockBarMockRecorder[T, R]) One(arg0 interface{}) *BarOneCall[T, R] {
 	return &BarOneCall[T, R]{Call: call}
 }
 
-//  BarOneCall wrap *gomock.Call
+// BarOneCall wrap *gomock.Call
 type BarOneCall[T any, R any] struct {
 	*gomock.Call
 }
@@ -432,7 +432,7 @@ func (mr *MockBarMockRecorder[T, R]) Seven(arg0 interface{}) *BarSevenCall[T, R]
 	return &BarSevenCall[T, R]{Call: call}
 }
 
-//  BarSevenCall wrap *gomock.Call
+// BarSevenCall wrap *gomock.Call
 type BarSevenCall[T any, R any] struct {
 	*gomock.Call
 }
@@ -471,7 +471,7 @@ func (mr *MockBarMockRecorder[T, R]) Seventeen() *BarSeventeenCall[T, R] {
 	return &BarSeventeenCall[T, R]{Call: call}
 }
 
-//  BarSeventeenCall wrap *gomock.Call
+// BarSeventeenCall wrap *gomock.Call
 type BarSeventeenCall[T any, R any] struct {
 	*gomock.Call
 }
@@ -509,7 +509,7 @@ func (mr *MockBarMockRecorder[T, R]) Six(arg0 interface{}) *BarSixCall[T, R] {
 	return &BarSixCall[T, R]{Call: call}
 }
 
-//  BarSixCall wrap *gomock.Call
+// BarSixCall wrap *gomock.Call
 type BarSixCall[T any, R any] struct {
 	*gomock.Call
 }
@@ -548,7 +548,7 @@ func (mr *MockBarMockRecorder[T, R]) Sixteen() *BarSixteenCall[T, R] {
 	return &BarSixteenCall[T, R]{Call: call}
 }
 
-//  BarSixteenCall wrap *gomock.Call
+// BarSixteenCall wrap *gomock.Call
 type BarSixteenCall[T any, R any] struct {
 	*gomock.Call
 }
@@ -584,7 +584,7 @@ func (mr *MockBarMockRecorder[T, R]) Ten(arg0 interface{}) *BarTenCall[T, R] {
 	return &BarTenCall[T, R]{Call: call}
 }
 
-//  BarTenCall wrap *gomock.Call
+// BarTenCall wrap *gomock.Call
 type BarTenCall[T any, R any] struct {
 	*gomock.Call
 }
@@ -623,7 +623,7 @@ func (mr *MockBarMockRecorder[T, R]) Thirteen() *BarThirteenCall[T, R] {
 	return &BarThirteenCall[T, R]{Call: call}
 }
 
-//  BarThirteenCall wrap *gomock.Call
+// BarThirteenCall wrap *gomock.Call
 type BarThirteenCall[T any, R any] struct {
 	*gomock.Call
 }
@@ -661,7 +661,7 @@ func (mr *MockBarMockRecorder[T, R]) Three(arg0 interface{}) *BarThreeCall[T, R]
 	return &BarThreeCall[T, R]{Call: call}
 }
 
-//  BarThreeCall wrap *gomock.Call
+// BarThreeCall wrap *gomock.Call
 type BarThreeCall[T any, R any] struct {
 	*gomock.Call
 }
@@ -700,7 +700,7 @@ func (mr *MockBarMockRecorder[T, R]) Twelve() *BarTwelveCall[T, R] {
 	return &BarTwelveCall[T, R]{Call: call}
 }
 
-//  BarTwelveCall wrap *gomock.Call
+// BarTwelveCall wrap *gomock.Call
 type BarTwelveCall[T any, R any] struct {
 	*gomock.Call
 }
@@ -738,7 +738,7 @@ func (mr *MockBarMockRecorder[T, R]) Two(arg0 interface{}) *BarTwoCall[T, R] {
 	return &BarTwoCall[T, R]{Call: call}
 }
 
-//  BarTwoCall wrap *gomock.Call
+// BarTwoCall wrap *gomock.Call
 type BarTwoCall[T any, R any] struct {
 	*gomock.Call
 }

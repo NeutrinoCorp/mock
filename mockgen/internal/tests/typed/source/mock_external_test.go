@@ -7,9 +7,9 @@ package source
 import (
 	reflect "reflect"
 
-	gomock "github.com/golang/mock/gomock"
-	typed "github.com/golang/mock/mockgen/internal/tests/typed"
-	other "github.com/golang/mock/mockgen/internal/tests/typed/other"
+	gomock "github.com/neutrinocorp/mock/gomock"
+	typed "github.com/neutrinocorp/mock/mockgen/internal/tests/typed"
+	other "github.com/neutrinocorp/mock/mockgen/internal/tests/typed/other"
 	constraints "golang.org/x/exp/constraints"
 )
 
@@ -51,7 +51,7 @@ func (mr *MockExternalConstraintMockRecorder[I, F]) Eight(arg0 interface{}) *Ext
 	return &ExternalConstraintEightCall[I, F]{Call: call}
 }
 
-//  ExternalConstraintEightCall wrap *gomock.Call
+// ExternalConstraintEightCall wrap *gomock.Call
 type ExternalConstraintEightCall[I constraints.Integer, F constraints.Float] struct {
 	*gomock.Call
 }
@@ -89,7 +89,7 @@ func (mr *MockExternalConstraintMockRecorder[I, F]) Five(arg0 interface{}) *Exte
 	return &ExternalConstraintFiveCall[I, F]{Call: call}
 }
 
-//  ExternalConstraintFiveCall wrap *gomock.Call
+// ExternalConstraintFiveCall wrap *gomock.Call
 type ExternalConstraintFiveCall[I constraints.Integer, F constraints.Float] struct {
 	*gomock.Call
 }
@@ -127,7 +127,7 @@ func (mr *MockExternalConstraintMockRecorder[I, F]) Four(arg0 interface{}) *Exte
 	return &ExternalConstraintFourCall[I, F]{Call: call}
 }
 
-//  ExternalConstraintFourCall wrap *gomock.Call
+// ExternalConstraintFourCall wrap *gomock.Call
 type ExternalConstraintFourCall[I constraints.Integer, F constraints.Float] struct {
 	*gomock.Call
 }
@@ -163,7 +163,7 @@ func (mr *MockExternalConstraintMockRecorder[I, F]) Nine(arg0 interface{}) *Exte
 	return &ExternalConstraintNineCall[I, F]{Call: call}
 }
 
-//  ExternalConstraintNineCall wrap *gomock.Call
+// ExternalConstraintNineCall wrap *gomock.Call
 type ExternalConstraintNineCall[I constraints.Integer, F constraints.Float] struct {
 	*gomock.Call
 }
@@ -201,7 +201,7 @@ func (mr *MockExternalConstraintMockRecorder[I, F]) One(arg0 interface{}) *Exter
 	return &ExternalConstraintOneCall[I, F]{Call: call}
 }
 
-//  ExternalConstraintOneCall wrap *gomock.Call
+// ExternalConstraintOneCall wrap *gomock.Call
 type ExternalConstraintOneCall[I constraints.Integer, F constraints.Float] struct {
 	*gomock.Call
 }
@@ -239,7 +239,7 @@ func (mr *MockExternalConstraintMockRecorder[I, F]) Seven(arg0 interface{}) *Ext
 	return &ExternalConstraintSevenCall[I, F]{Call: call}
 }
 
-//  ExternalConstraintSevenCall wrap *gomock.Call
+// ExternalConstraintSevenCall wrap *gomock.Call
 type ExternalConstraintSevenCall[I constraints.Integer, F constraints.Float] struct {
 	*gomock.Call
 }
@@ -277,7 +277,7 @@ func (mr *MockExternalConstraintMockRecorder[I, F]) Six(arg0 interface{}) *Exter
 	return &ExternalConstraintSixCall[I, F]{Call: call}
 }
 
-//  ExternalConstraintSixCall wrap *gomock.Call
+// ExternalConstraintSixCall wrap *gomock.Call
 type ExternalConstraintSixCall[I constraints.Integer, F constraints.Float] struct {
 	*gomock.Call
 }
@@ -313,7 +313,7 @@ func (mr *MockExternalConstraintMockRecorder[I, F]) Ten(arg0 interface{}) *Exter
 	return &ExternalConstraintTenCall[I, F]{Call: call}
 }
 
-//  ExternalConstraintTenCall wrap *gomock.Call
+// ExternalConstraintTenCall wrap *gomock.Call
 type ExternalConstraintTenCall[I constraints.Integer, F constraints.Float] struct {
 	*gomock.Call
 }
@@ -351,7 +351,7 @@ func (mr *MockExternalConstraintMockRecorder[I, F]) Three(arg0 interface{}) *Ext
 	return &ExternalConstraintThreeCall[I, F]{Call: call}
 }
 
-//  ExternalConstraintThreeCall wrap *gomock.Call
+// ExternalConstraintThreeCall wrap *gomock.Call
 type ExternalConstraintThreeCall[I constraints.Integer, F constraints.Float] struct {
 	*gomock.Call
 }
@@ -389,7 +389,7 @@ func (mr *MockExternalConstraintMockRecorder[I, F]) Two(arg0 interface{}) *Exter
 	return &ExternalConstraintTwoCall[I, F]{Call: call}
 }
 
-//  ExternalConstraintTwoCall wrap *gomock.Call
+// ExternalConstraintTwoCall wrap *gomock.Call
 type ExternalConstraintTwoCall[I constraints.Integer, F constraints.Float] struct {
 	*gomock.Call
 }

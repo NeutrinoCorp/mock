@@ -4,9 +4,9 @@ package user_test
 import (
 	"testing"
 
-	"github.com/golang/mock/gomock"
-	user "github.com/golang/mock/sample"
-	"github.com/golang/mock/sample/imp1"
+	"github.com/neutrinocorp/mock/gomock"
+	user "github.com/neutrinocorp/mock/sample"
+	"github.com/neutrinocorp/mock/sample/imp1"
 )
 
 func TestRemember(t *testing.T) {

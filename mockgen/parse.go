@@ -33,7 +33,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/golang/mock/mockgen/model"
+	"github.com/neutrinocorp/mock/mockgen/model"
 )
 
 var (
@@ -663,17 +663,19 @@ func (p *fileParser) parseArrayLength(expr ast.Expr) (string, error) {
 // instTypeMatcher map type param to inst type param
 // parent for embed's embed
 // eg:
-// type a[t any] interface {
-// 	b[t]
-// }
 //
-// type b[u any] interface {
-// 	c[u]
-// }
+//	type a[t any] interface {
+//		b[t]
+//	}
 //
-// type c[v any] interface {
-// 	d(v)
-// }
+//	type b[u any] interface {
+//		c[u]
+//	}
+//
+//	type c[v any] interface {
+//		d(v)
+//	}
+//
 // for a.b.c
 // {types: [v:u], parent: {u:t}}
 type instTypeMatcher struct {
@@ -719,9 +721,9 @@ type instType struct {
 // eg:
 // type foo[a, b, c any] interface{}
 //
-// type bar[R] interface {
-// 	foo[string, R, other.Struct]
-// }
+//	type bar[R] interface {
+//		foo[string, R, other.Struct]
+//	}
 //
 // for bar's foo
 // the instTypeMatcher is {a:string, b:R, c:other.Struct}
@@ -827,19 +829,19 @@ func importsOfFile(file *ast.File) (normalImports map[string]importedPackage, do
 //
 // eg:
 // package other
-// type reader[r interface{}] interface {
-// 	read() r
-// }
 //
-// type writer[w interface{}] interface {
-// 	write() w
-// }
+//	type reader[r interface{}] interface {
+//		read() r
+//	}
 //
+//	type writer[w interface{}] interface {
+//		write() w
+//	}
 //
-// type readwriter[i X, s string] interface {
-// 	other.reader[i]
-// 	other.writer[s]
-// }
+//	type readwriter[i X, s string] interface {
+//		other.reader[i]
+//		other.writer[s]
+//	}
 //
 // type X struct{}
 //

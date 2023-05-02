@@ -7,7 +7,7 @@ package gomock_test
 import (
 	reflect "reflect"
 
-	"github.com/golang/mock/gomock"
+	"github.com/neutrinocorp/mock/gomock"
 )
 
 // MockFoo is a mock of Foo interface.

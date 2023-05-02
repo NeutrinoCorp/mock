@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/golang/mock/gomock"
+	"github.com/neutrinocorp/mock/gomock"
 )
 
 type Foo interface {

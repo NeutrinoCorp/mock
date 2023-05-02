@@ -3,7 +3,7 @@ package typed
 import (
 	"testing"
 
-	"github.com/golang/mock/gomock"
+	"github.com/neutrinocorp/mock/gomock"
 )
 
 // TestValidInterface assesses whether or not the generated mock is valid

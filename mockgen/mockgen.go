@@ -37,14 +37,14 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/golang/mock/mockgen/model"
+	"github.com/neutrinocorp/mock/mockgen/model"
 
 	"golang.org/x/mod/modfile"
 	toolsimports "golang.org/x/tools/imports"
 )
 
 const (
-	gomockImportPath = "github.com/golang/mock/gomock"
+	gomockImportPath = "github.com/neutrinocorp/mock/gomock"
 )
 
 var (

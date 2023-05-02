@@ -7,8 +7,8 @@ package typed
 import (
 	reflect "reflect"
 
-	gomock "github.com/golang/mock/gomock"
-	faux "github.com/golang/mock/mockgen/internal/tests/typed/faux"
+	gomock "github.com/neutrinocorp/mock/gomock"
+	faux "github.com/neutrinocorp/mock/mockgen/internal/tests/typed/faux"
 )
 
 // MockSource is a mock of Source interface.
@@ -49,7 +49,7 @@ func (mr *MockSourceMockRecorder) Error() *SourceErrorCall {
 	return &SourceErrorCall{Call: call}
 }
 
-//  SourceErrorCall wrap *gomock.Call
+// SourceErrorCall wrap *gomock.Call
 type SourceErrorCall struct {
 	*gomock.Call
 }
@@ -87,7 +87,7 @@ func (mr *MockSourceMockRecorder) Method() *SourceMethodCall {
 	return &SourceMethodCall{Call: call}
 }
 
-//  SourceMethodCall wrap *gomock.Call
+// SourceMethodCall wrap *gomock.Call
 type SourceMethodCall struct {
 	*gomock.Call
 }

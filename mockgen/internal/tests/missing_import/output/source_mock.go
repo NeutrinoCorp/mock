@@ -7,8 +7,8 @@ package source
 import (
 	reflect "reflect"
 
-	gomock "github.com/golang/mock/gomock"
-	source "github.com/golang/mock/mockgen/internal/tests/missing_import/source"
+	gomock "github.com/neutrinocorp/mock/gomock"
+	source "github.com/neutrinocorp/mock/mockgen/internal/tests/missing_import/source"
 )
 
 // MockBar is a mock of Bar interface.
