@@ -38,3 +38,7 @@ type StructType struct{}
 type StructType2 struct{}
 
 type AliasType Baz[other.Three]
+
+type TwentyTwo[T any] interface {
+	TwentyTwo() T
+}
